@@ -1,0 +1,12 @@
+name: 'PR Label'
+description: 'PR Label'
+author: 'enda1111'
+inputs:
+  github-token:
+    description: 'GITHUB_TOKEN'
+  config-path:
+    description: 'config file path'
+    default: '.github/pr-label.json'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
